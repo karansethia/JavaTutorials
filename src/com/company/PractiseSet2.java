@@ -7,25 +7,34 @@
  */
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PractiseSet2 {
     public static void main(String[] args) {
         //ans1
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the strings");
-        String strUp = sc.next();
-        System.out.println(strUp.toLowerCase());
-        //ans2
-        String str = "Hi this is Karan. Nice to meet you";
-        System.out.println(str.replace(' ','_'));
-        //ans3
-        String name = "Karan";
-        System.out.printf("letter =Dear %s ,Thanks a lot\n",name);
-        //ans4
-        String mystr = "This string  has double and   triple spaces";
-        System.out.println(mystr.indexOf("  "));
-        System.out.println(mystr.indexOf("   "));
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the strings");
+//        String strUp = sc.next();
+//        System.out.println(strUp.toLowerCase());
+//        //ans2
+//        String str = "Hi this is Karan. Nice to meet you";
+//        System.out.println(str.replace(' ','_'));
+//        //ans3
+//        String name = "Karan";
+//        System.out.printf("letter =Dear %s ,Thanks a lot\n",name);
+//        //ans4
+//        String mystr = "This string  has double and   triple spaces";
+//        System.out.println(mystr.indexOf("  "));
+//        System.out.println(mystr.indexOf("   "));
+        char[] a1 = {'a','b','c'};
+        char[] a2 = {'b','a','c'};
+        if(Arrays.equals(a1,a2)){
+            System.out.println("equal");
+        }
+        else{
+            System.out.println("not equal");
+        }
 
     }
 }
